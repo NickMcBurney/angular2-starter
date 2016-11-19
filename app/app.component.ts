@@ -11,10 +11,10 @@ import {StarIcon} from './star.component'
         <h1>My First Angular 2 App</h1>
         <courses></courses>
         <authors></authors>
-        <currencyInput></currencyInput>
+        <currencyInput label="Currency Input"></currencyInput>
         <star-icon></star-icon>
       </div>
-    `
+    `,
     directives: [CoursesComponent, AuthorComponent, CurrencyInput, StarIcon]
 })
 export class AppComponent { }

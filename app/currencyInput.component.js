@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             // angular final - changed to ->    import {Component} from '@angular/core'
             CurrencyInput = (function () {
                 function CurrencyInput() {
-                    this.label = "Currency";
+                    //label = "Currency";
                     this.value = "£0";
                 }
                 CurrencyInput.prototype.formatCurrency = function (value) {
@@ -39,10 +39,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     }
                     return "£" + v1 + v2;
                 };
+                __decorate([
+                    core_1.Input('label'), 
+                    __metadata('design:type', String)
+                ], CurrencyInput.prototype, "label", void 0);
                 CurrencyInput = __decorate([
                     core_1.Component({
                         selector: 'currencyInput',
-                        template: "\n        <label>{{label}}</label>\n        <input type=\"text\" autoGrow [value]=\"value\" (input)=\"value = formatCurrency($event.target.value)\" />\n        <input type=\"text\" autoGrow [(ngModel)]=\"value \" />\n        <p>Value: {{ value }}</p>\n    "
+                        template: "\n        <label>{{label}}</label>\n        <input type=\"text\" autoGrow [value]=\"value\" (input)=\"value = formatCurrency($event.target.value)\" />\n        <p>Value: {{ value }}</p>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], CurrencyInput);

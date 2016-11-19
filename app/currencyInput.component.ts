@@ -3,7 +3,7 @@
 // COMPONENT WILL FORMAT VAlUE ON INPUT
 //////////////////////////////////////////
 
-import {Component} from 'angular2/core'
+import {Component, Input} from 'angular2/core'
 // angular final - changed to ->    import {Component} from '@angular/core'
 
 @Component({
@@ -11,13 +11,13 @@ import {Component} from 'angular2/core'
     template: `
         <label>{{label}}</label>
         <input type="text" autoGrow [value]="value" (input)="value = formatCurrency($event.target.value)" />
-        <input type="text" autoGrow [(ngModel)]="value " />
         <p>Value: {{ value }}</p>
     `
 })
 export class CurrencyInput {
-    label = "Currency";
-    value = "£0"
+    @Input('label') label: string;
+    //label = "Currency";
+    value = "£0";
 
     formatCurrency(value){
         var v = value.replace('£', '');

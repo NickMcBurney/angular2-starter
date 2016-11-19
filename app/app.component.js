@@ -36,7 +36,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "<div [style.padding]=\"80\">\n        <h1>My First Angular 2 App</h1>\n        <courses></courses>\n        <authors></authors>\n        <currencyInput></currencyInput>\n        <star-icon></star-icon>\n      </div>\n    ",
+                        template: "<div [style.padding]=\"80\">\n        <h1>My First Angular 2 App</h1>\n        <courses></courses>\n        <authors></authors>\n        <currencyInput label=\"Currency Input\"></currencyInput>\n        <star-icon></star-icon>\n      </div>\n    ",
                         directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorComponent, currencyInput_component_1.CurrencyInput, star_component_1.StarIcon]
                     }), 
                     __metadata('design:paramtypes', [])
