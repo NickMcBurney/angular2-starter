@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{7CEB122B-53BE-4791-A41A-BDA65C9F02A5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Angular2_starter</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="app\app.component.js" />
+    <Content Include="app\authors.component.js" />
+    <Content Include="app\authors.service.js" />
+    <Content Include="app\auto-grow.directive.js" />
+    <Content Include="app\boot.js" />
+    <Content Include="app\course.service.js" />
+    <Content Include="app\courses.component.js" />
+    <Content Include="app\currencyInput.component.js" />
+    <Content Include="app\star.component.js" />
+    <Content Include="index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\0b\f3b6daedcf7730d7b40fdff95eed6bb0b238f9" />
+    <None Include=".git\objects\0c\a1b033af2f7ec86aa90275ec2899b47ec734b0" />
+    <None Include=".git\objects\15\d495de216050c1e9ac0956277d9d78f9c043c3" />
+    <None Include=".git\objects\18\2264cb4b7d93f8bc6c6c5a3dc07d234a7e53a8" />
+    <None Include=".git\objects\19\28315185d377f3c13fcdd326ad5536d0a17f45" />
+    <None Include=".git\objects\23\4c4fba962f5e07a4a3af83f939ee3238629664" />
+    <None Include=".git\objects\2a\59f22b963ae2c068432fca7081d57b389a6b68" />
+    <None Include=".git\objects\32\d24a319292ec326edecd4543edeea287607674" />
+    <None Include=".git\objects\35\6f905e33db6681b61bd77e7c0b6cf06a06ccc5" />
+    <None Include=".git\objects\3b\e9f9283c4372ad2ef6c39cfd7a7b7e8e4f86ef" />
+    <None Include=".git\objects\3e\52f836b7f6ac5cbc940c8eaafec88def256ae2" />
+    <None Include=".git\objects\41\70bb22f7d1c9e3f4dd224994c3c55e94761eb1" />
+    <None Include=".git\objects\46\2ea4ea59d3c4945e2d89dcd3faf0aa4c418548" />
+    <None Include=".git\objects\50\1df6011b8f53e653b274716b222281e16bbc63" />
+    <None Include=".git\objects\51\48e527a7e286a1efcc44d65a7f8241267dce9b" />
+    <None Include=".git\objects\51\8661cb12084a950e2129ce800341b029274051" />
+    <None Include=".git\objects\53\f3ac97dcaa4dfa4bd4adc27cc96e1d8ed8b06b" />
+    <None Include=".git\objects\55\9278f97103d6b7e13400a2c41eafb5037e2811" />
+    <None Include=".git\objects\56\2c7788664f05b64b6549a971b67a6b1494fc72" />
+    <None Include=".git\objects\5f\d3b31165039a37c0a1bc99466c8099a1a7ed39" />
+    <None Include=".git\objects\60\800493efc538323cf46cecf24d522539f8b44c" />
+    <None Include=".git\objects\65\0cfcedeeee33b999ce8fbcb26b6ff84010de4b" />
+    <None Include=".git\objects\74\de92953b2f93d578c256655f9b3d0347372689" />
+    <None Include=".git\objects\82\8de531dffe616078a879318387df5bbd4c4889" />
+    <None Include=".git\objects\8a\3c3cf0c7db6fea3f9f010dc657ac5ee3e5bcea" />
+    <None Include=".git\objects\8b\ec3fb82d8c2b95d6fb6aee0a4ebbff73c0565e" />
+    <None Include=".git\objects\8d\dfb50adb31f0c0f8b74d0d3f07b45fd38533cf" />
+    <None Include=".git\objects\90\cd23ca1548ce9272696c4eef6b5c8376724645" />
+    <None Include=".git\objects\9a\15a88b10224c1c9a36b2533e76b678c284a77a" />
+    <None Include=".git\objects\9c\d8990bace1606f0d31cf1617642d3ea2d23c19" />
+    <None Include=".git\objects\9f\f742f1aff0071ca607dc4bbe669b14c7044a9f" />
+    <None Include=".git\objects\a1\4d34ae95620f6c947ce6e5ded6415bcb9c2b66" />
+    <None Include=".git\objects\b2\bc84ef815bb4093d267877e71025c87ffb61b2" />
+    <None Include=".git\objects\be\071bdab516ff9a6e53dbe5cf522b7340fc5063" />
+    <None Include=".git\objects\c2\41502a13c7d384a9ad2ec960d3fddfcb3bfff8" />
+    <None Include=".git\objects\c8\81553020d9b9fd6955012623912b39632346aa" />
+    <None Include=".git\objects\cb\c90e0a8adbea4e7f7dd4012f5e9836732095a9" />
+    <None Include=".git\objects\cc\dda087ebd7b4f305a9d814ef8e51ce24532946" />
+    <None Include=".git\objects\d3\e741cab292079b925b2d15750a4cd1a775ff2d" />
+    <None Include=".git\objects\de\ce9ff0b288793cc544b01ea02a423cb3376d11" />
+    <None Include=".git\objects\e5\67e321e103f351300760311835a0e60c117d3c" />
+    <None Include=".git\objects\e7\aa0b35c1c4aeb1d2c5abaa1492b56c18af4256" />
+    <None Include=".git\objects\ea\0cfd7c6f596720b50415b3face95dfe36eac79" />
+    <None Include=".git\objects\eb\3d6e1eb7bde787178f5dcd947268b7b66aec80" />
+    <None Include=".git\objects\ec\be5cf8751ee1b1cb6ed2b362c151fe4a4785a9" />
+    <None Include=".git\objects\f1\66db7603e951b5dc1e1076323cf86b119fc983" />
+    <None Include=".git\objects\f6\02604b205f1d8ffcf20260823c6c4822627d57" />
+    <None Include=".git\objects\fc\97913046acf34124c79b98a9c6b1d718d51f3f" />
+    <None Include=".git\objects\fd\623168b76756ac056ce8057e1156d14eeecaf9" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include="app\app.component.js.map" />
+    <None Include="app\authors.component.js.map" />
+    <None Include="app\authors.service.js.map" />
+    <None Include="app\auto-grow.directive.js.map" />
+    <None Include="app\boot.js.map" />
+    <None Include="app\course.service.js.map" />
+    <None Include="app\courses.component.js.map" />
+    <None Include="app\currencyInput.component.js.map" />
+    <None Include="app\star.component.js.map" />
+    <None Include="package.json" />
+    <None Include="tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\authors.component.ts" />
+    <TypeScriptCompile Include="app\authors.service.ts" />
+    <TypeScriptCompile Include="app\auto-grow.directive.ts" />
+    <TypeScriptCompile Include="app\boot.ts" />
+    <TypeScriptCompile Include="app\course.service.ts" />
+    <TypeScriptCompile Include="app\courses.component.ts" />
+    <TypeScriptCompile Include="app\currencyInput.component.ts" />
+    <TypeScriptCompile Include="app\star.component.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
